@@ -301,7 +301,7 @@ def click_verify(driver: WebDriver):
         logging.debug("Try to find the Cloudflare 'Verify you are human' button...")
         button = driver.find_element(
             by=By.XPATH,
-            value="//input[@type='button' and @value='Bestätigen Sie, dass Sie ein Mensch sind']",
+            value="//input[@type='button' and @value='Verify you are human']",
         )
         if button:
             actions = ActionChains(driver)
